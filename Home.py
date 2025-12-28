@@ -20,7 +20,7 @@ st.set_page_config(
 def load_and_train_model():
     # Veriyi yükle
     try:
-        df = pd.read_csv('data/heart_disease_uci.csv')
+        df = pd.read_csv(r'data-mining-hearth-disease\data\heart_disease_uci.csv')
     except FileNotFoundError:
         st.error("Lütfen 'heart_disease_uci.csv' dosyasını bu kodla aynı klasöre koyduğunuzdan emin olun.")
         return None, None, None
@@ -36,7 +36,7 @@ def load_and_train_model():
     # Kategorik olanlar için mod (en çok tekrar eden), sayısal olanlar için medyan
     for col in df.columns:
         if df[col].dtype == 'object':
-            df[col] = df[col].fillna(df[col].mode()[0])
+            df[col] = df[col].fillna(df[col].mode()[0]).infer_objects(copy=False)
         else:
             df[col] = df[col].fillna(df[col].median())
 
