@@ -26,7 +26,7 @@ print("="*80)
 print("\n[1] LOADING AND EXPLORING DATASET")
 print("-"*80)
 
-df = pd.read_csv(r'C:\Users\DELL\Desktop\YL_İkinciDonem\VeriMadenciliği\data-mining-hearth-disease\data\heart_disease_uci.csv')
+df = pd.read_csv('data/heart_disease_uci.csv')
 
 print(f"Dataset shape: {df.shape}")
 print(f"Missing values:\n{df.isnull().sum()}")
@@ -313,8 +313,8 @@ results_df = pd.DataFrame(results_data)
 print(results_df.to_string(index=False))
 
 # Save results
-results_df.to_csv(r'C:\Users\DELL\Desktop\YL_İkinciDonem\VeriMadenciliği\data-mining-hearth-disease\model_performance_comparison.csv', index=False)
-print("\n✓ Results saved to model_performance_comparison.csv")
+results_df.to_csv('results/model_performance_comparison.csv', index=False)
+print("\n✓ Results saved to results/model_performance_comparison.csv")
 
 # ============================================================================
 # 10. VISUALIZATION
@@ -362,8 +362,8 @@ ax.set_title('ROC Curves')
 ax.legend(loc='lower right', fontsize=8)
 
 plt.tight_layout()
-plt.savefig(r'C:\Users\DELL\Desktop\YL_İkinciDonem\VeriMadenciliği\data-mining-hearth-disease\model_comparison.png', dpi=300, bbox_inches='tight')
-print("✓ Visualization saved to model_comparison.png")
+plt.savefig('results/model_comparison.png', dpi=300, bbox_inches='tight')
+print("✓ Visualization saved to results/model_comparison.png")
 plt.close()
 
 # Feature Importance Comparison
@@ -377,8 +377,8 @@ ax.barh(feature_imp_tuned['feature'], feature_imp_tuned['importance'], color='#2
 ax.set_xlabel('Importance Score')
 ax.set_title('Top 10 Features - Tuned Random Forest')
 plt.tight_layout()
-plt.savefig(r'C:\Users\DELL\Desktop\YL_İkinciDonem\VeriMadenciliği\data-mining-hearth-disease\feature_importance.png', dpi=300, bbox_inches='tight')
-print("✓ Feature importance plot saved")
+plt.savefig('results/feature_importance.png', dpi=300, bbox_inches='tight')
+print("✓ Feature importance plot saved to results/feature_importance.png")
 plt.close()
 
 # ============================================================================

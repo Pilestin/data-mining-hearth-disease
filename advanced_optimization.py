@@ -24,7 +24,7 @@ print("="*80)
 print("\n[1] DATA PREPARATION")
 print("-"*80)
 
-df = pd.read_csv(r'C:\Users\DELL\Desktop\YL_İkinciDonem\VeriMadenciliği\data-mining-hearth-disease\data\heart_disease_uci.csv')
+df = pd.read_csv('data/heart_disease_uci.csv')
 df = df.drop(['id', 'dataset'], axis=1)
 df['target'] = df['num'].apply(lambda x: 1 if x > 0 else 0)
 df = df.drop('num', axis=1)
@@ -156,8 +156,8 @@ ax2.legend()
 ax2.grid(alpha=0.3)
 
 plt.tight_layout()
-plt.savefig(r'C:\Users\DELL\Desktop\YL_İkinciDonem\VeriMadenciliği\data-mining-hearth-disease\threshold_optimization.png', dpi=300, bbox_inches='tight')
-print("✓ Saved: threshold_optimization.png")
+plt.savefig('results/threshold_optimization.png', dpi=300, bbox_inches='tight')
+print("✓ Saved: results/threshold_optimization.png")
 plt.close()
 
 # ============================================================================
@@ -337,8 +337,8 @@ ax.set_title('Feature Importance Stability')
 ax.legend()
 
 plt.tight_layout()
-plt.savefig(r'C:\Users\DELL\Desktop\YL_İkinciDonem\VeriMadenciliği\data-mining-hearth-disease\advanced_optimization.png', dpi=300, bbox_inches='tight')
-print("✓ Saved: advanced_optimization.png")
+plt.savefig('results/advanced_optimization.png', dpi=300, bbox_inches='tight')
+print("✓ Saved: results/advanced_optimization.png")
 plt.close()
 
 # ============================================================================
