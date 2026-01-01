@@ -4,3 +4,7 @@ numpy
 seaborn
 matplotlib
 scikit-learn
+xgboost==1.7.6
+imbalanced-learn
+optuna
+

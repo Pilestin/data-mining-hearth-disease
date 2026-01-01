@@ -119,7 +119,7 @@ st.markdown("""
 def load_cleveland_data():
     """Load Cleveland dataset"""
     try:
-        df = pd.read_csv('/mnt/user-data/uploads/heart_disease_uci.csv')
+        df = pd.read_csv("data/heart_disease_uci.csv")
         df = df[df['dataset'] == 'Cleveland'].copy()
         df['target'] = (df['num'] > 0).astype(int)
         return df
@@ -1340,11 +1340,18 @@ def page_patient_prediction():
         X_train = df_train[feature_cols].values
         y_train = df_train['target'].values
         
+        # ✅ CRITICAL FIX: Apply KNN Imputer BEFORE scaling to handle NaN values
+        imputer = KNNImputer(n_neighbors=5)
+        X_train = imputer.fit_transform(X_train)
+        
         # Scale if needed
         scaler = RobustScaler()
         X_train = scaler.fit_transform(X_train)
-        df_input_scaled = df_input[feature_cols].copy()
-        df_input_scaled = scaler.transform(df_input_scaled)
+        
+        # Prepare patient input with same transformations
+        df_input_scaled = df_input[feature_cols].copy().values
+        df_input_scaled = imputer.transform(df_input_scaled)  # Apply same imputer
+        df_input_scaled = scaler.transform(df_input_scaled)    # Apply same scaler
         
         model.fit(X_train, y_train)
         
@@ -1382,7 +1389,7 @@ def page_patient_prediction():
             st.markdown("---")
             st.subheader("📝 Detaylı Değerlendirme")
             
-            if probability > 0.7:
+            if probability > 0.5:
                 st.error("""
                 ### ⚠️ YÜKSEK RİSK DEĞERLENDİRMESİ
                 
@@ -1396,7 +1403,7 @@ def page_patient_prediction():
                 5. 📋 Risk faktörleri (BP, kolesterol, sigara) kontrol edilmeli
                 """)
             
-            elif probability > 0.5:
+            elif probability > 0.4:
                 st.warning("""
                 ### ⚠️ ORTA RİSK DEĞERLENDİRMESİ
                 
@@ -2051,7 +2058,8 @@ def page_technical():
 def main():
     # Sidebar navigation
     st.sidebar.markdown("---")
-    st.sidebar.image("https://via.placeholder.com/200x100?text=❤️+Heart+Disease", use_column_width=True)
+    # st.sidebar.image("https://via.placeholder.com/200x100?text=Heart+Disease", use_container_width=True)
+    st.sidebar.markdown("### ❤️ Heart Disease Prediction System")
     st.sidebar.markdown("---")
     
     page = st.sidebar.radio(
@@ -2064,8 +2072,7 @@ def main():
             "🏥 Hasta Prediksiyon",
             "💡 Model Önerileri",
             "📚 Teknik Dokümantasyon"
-        ],
-        icon_values=["🏠", "📊", "📈", "🔥", "🏥", "💡", "📚"]
+        ]
     )
     
     st.sidebar.markdown("---")
