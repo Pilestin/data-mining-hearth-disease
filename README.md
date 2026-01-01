@@ -1,30 +1,40 @@
-╔══════════════════════════════════════════════════════════════════════════════╗
-║                                                                              ║
-║                  ✅ PROJE TAMAMLANDI - ÖZET VE DOSYA KATALOĞİ               ║
-║                                                                              ║
-║            UCI Heart Disease - Kapsamlı Senaryo Analiz Sistemi             ║
-║                                                                              ║
-║                         Streamlit Entegre Uygulaması                        ║
-║                                                                              ║
-╚══════════════════════════════════════════════════════════════════════════════╝
+# UCI Heart Disease - Kapsamlı Senaryo Analiz Sistemi
 
-🎉 TEBRIKLER! PROJE BAŞARIYLA TAMAMLANDI
+## Proje Bilgileri
+
+**Kurum:** Eskişehir Osmangazi Üniversitesi  
+**Fakülte:** Fen Bilimleri Enstitüsü  
+**Program:** Veri Madenciliği Yüksek Lisans Programı  
+**Ders:** Veri Madenciliği  
+
+**Geliştiriciler:**
+- Yasin Ünal
+- Serhat Kahraman
+
+**Proje Durumu:** Tamamlandı  
+**Son Güncelleme:** 1 Ocak 2025
 
 ---
 
-## 📊 PROJE ÖZETİ
+## Genel Bakış
 
-### ✅ Tamamlanan İşler
+Bu proje, UCI Heart Disease veri seti kullanılarak kalp hastalığı risk tahmininde makine öğrenmesi algoritmalarının performansını değerlendiren kapsamlı bir analiz sistemidir. Proje kapsamında 6 farklı makine öğrenmesi modeli ve 6 farklı optimizasyon senaryosu incelenmiş, Streamlit tabanlı interaktif bir web uygulaması geliştirilmiştir.
 
-1. **6 Senaryo Tam Analizi** ✓
+---
+
+## Tamamlanan Çalışmalar
+
+### 1. Senaryo Analizi
+
+**Altı Farklı Senaryo:**
    - S0: Baseline (RobustScaler)
-   - S1: + PCA (Boyut azaltma)
-   - S2: + Feature Engineering (4 yeni özellik)
-   - S3: + SMOTE (Sınıf dengeleme) ⭐ EN ETKİLİ
-   - S4: + Optuna (Hiperparametre optimizasyonu)
-   - S5: All Combined (Tüm teknikler) 🏆 EN İYİ
+   - S1: Principal Component Analysis (PCA - Boyut azaltma)
+   - S2: Feature Engineering (4 yeni özellik)
+   - S3: SMOTE (Sınıf dengeleme) - En etkili teknik
+   - S4: Optuna (Hiperparametre optimizasyonu)
+   - S5: All Combined (Tüm tekniklerin kombinasyonu) - En iyi sonuç
 
-2. **6 Makine Öğrenmesi Modeli** ✓
+### 2. Makine Öğrenmesi Modelleri
    - Logistic Regression
    - Random Forest
    - Support Vector Machine (SVM)
@@ -32,48 +42,48 @@
    - XGBoost
    - K-Nearest Neighbors (KNN)
 
-3. **Kapsamlı Streamlit Uygulaması** ✓
+### 3. Streamlit Web Uygulaması
    - 7 interaktif sayfa
    - 2000+ satır Python kodu
    - 10-Fold Stratified Cross-Validation
-   - Otomatik caching ve performans optimizasyonu
-   - Hasta prediksiyon modülü
-   - Detaylı teknik dokumentasyon
+   - Otomatik önbellek ve performans optimizasyonu
+   - Hasta tahmin modülü
+   - Detaylı teknik dokümantasyon
 
-4. **Teknik İyileştirmeler** ✓
-   - KNN Imputer (eksik değerler)
-   - RobustScaler + StandardScaler (ölçekleme)
+### 4. Teknik İyileştirmeler
+   - KNN Imputer (eksik değer doldurma)
+   - RobustScaler + StandardScaler (ölçeklendirme)
    - PCA (boyut azaltma)
    - SMOTE (sınıf dengeleme)
    - Optuna (Bayesian hiperparametre optimizasyonu)
-   - Heatmap analizi
+   - Isı haritası analizi
    - Model karşılaştırması
 
-5. **Klinik Entegrasyon** ✓
-   - Hasta prediksiyon arayüzü
-   - Risk stratifikasyonu
+### 5. Klinik Entegrasyon
+   - Hasta tahmin arayüzü
+   - Risk sınıflandırması
    - Tıbbi öneriler
-   - Threshold optimizasyonu
-   - Yasal uyarılar ve disclaimer'lar
+   - Eşik değer optimizasyonu
+   - Yasal uyarılar ve sorumluluk reddi
 
 ---
 
-## 📁 DOSYA KATALOĞİ (21 Dosya - 1.6 MB)
+## Dosya Kataloğu (21 Dosya - 1.6 MB)
 
-### 🚀 BAŞLAMAK İÇİN (BURAYI OKU İLK)
+### Başlangıç Rehberleri
 
 ```
 1. RUN_ME_FIRST.md (7.3 KB)
    └─ 2 dakikalık kurulum rehberi
    └─ Temel komutlar ve sorun giderme
    └─ Başlangıç kontrol listesi
-   └─ EN KISA REHBERİ
+   └─ En kısa rehber
 ```
 
-### 💻 ANA STREAMLIT UYGULAMASI (ÇALIŞTIR BUNU)
+### Ana Streamlit Uygulaması
 
 ```
-2. Home_Optimized_COMPREHENSIVE_v3.py (77 KB) ⭐ ANA FİLE
+2. Home_Optimized_COMPREHENSIVE_v3.py (77 KB) - Ana dosya
    ├─ 2000+ satır eksiksiz uygulama
    ├─ 7 interaktif sayfa:
    │  1. Ana Sayfa (proje tanımı, öneriler)
@@ -83,10 +93,10 @@
    │  5. Hasta Prediksiyon (interaktif form)
    │  6. Model Önerileri (klinik senaryolar)
    │  7. Teknik Dokümantasyon (5 sekme)
-   └─ BUNU ÇALIŞTIRÇ: streamlit run Home_Optimized_COMPREHENSIVE_v3.py
+   └─ Çalıştırma komutu: streamlit run Home_Optimized_COMPREHENSIVE_v3.py
 ```
 
-### 📚 DOKÜMANTASYON (10 Dosya)
+### Dokümantasyon (10 Dosya)
 
 **Hızlı Rehberler:**
 ```
@@ -96,7 +106,7 @@
    
 4. README.md (16 KB)
    └─ Kapsamlı proje rehberi
-   └─ İngilizce ve Türkçe karışık
+   └─ Ana dokümantasyon dosyası
 ```
 
 **Detaylı Raporlar:**
@@ -108,9 +118,9 @@
    └─ Optimizasyon tekniklerinin detayları
    
 7. TECHNICAL_REPORT.md (20 KB)
-   └─ YÜKLEDIĞINIZ Türkçe rapor
+   └─ Türkçe teknik rapor
    └─ Matematiksel formüller
-   └─ 6 senaryo metodoloji
+   └─ 6 senaryo metodolojisi
    
 8. ADVANCED_OPTIMIZATION_GUIDE.md (19 KB)
    └─ Threshold optimization
@@ -126,10 +136,10 @@
     └─ Karşılaştırma ve seçim rehberi
     
 11. MANIFEST.md (14 KB)
-    └─ Tüm dosyaların inventorisi
+    └─ Tüm dosyaların envanteri
 ```
 
-### 💾 PYTHON SCRIPTLERI (4 Dosya)
+### Python Betikleri (4 Dosya)
 
 **Ana Uygulamalar:**
 ```
@@ -149,11 +159,11 @@
     
 16. analysis_extended.py (20 KB)
     └─ Senaryo karşılaştırması
-    └─ Heatmap oluşturma
-    └─ Hasta prediksiyon modülü
+    └─ Isı haritası oluşturma
+    └─ Hasta tahmin modülü
 ```
 
-### 📊 GÖRSELLEŞTİRMELER (4 PNG Dosya)
+### Görselleştirmeler (4 PNG Dosya)
 
 ```
 17. model_comparison.png (482 KB)
@@ -174,7 +184,7 @@
        - Feature importance stability
 ```
 
-### 📋 VERİ (2 Dosya)
+### Veri Dosyaları (2 Dosya)
 
 ```
 21. heart_disease_uci.csv (79 KB)
@@ -187,9 +197,9 @@
 
 ---
 
-## 🎯 HEMEN BAŞLA
+## Hızlı Başlangıç
 
-### Adım 1: Kurulum (2 dakika)
+### Adım 1: Kurulum
 ```bash
 # Virtual environment oluştur
 python3 -m venv heart_disease_env
@@ -199,13 +209,13 @@ source heart_disease_env/bin/activate
 pip install pandas numpy scikit-learn matplotlib seaborn streamlit xgboost imbalanced-learn optuna scipy
 ```
 
-### Adım 2: Çalıştır (30 saniye)
+### Adım 2: Uygulamayı Çalıştırma
 ```bash
 streamlit run Home_Optimized_COMPREHENSIVE_v3.py
 ```
 
-### Adım 3: Kullan (30 dakika)
-- Tarayıcı açılacak: http://localhost:8501
+### Adım 3: Kullanım
+- Uygulama tarayıcıda açılacaktır: http://localhost:8501
 - Ana Sayfayı oku (3 dakika)
 - Senaryo Analizi'ni incele (10 dakika)
 - Karşılaştırma'yı gör (5 dakika)
@@ -214,16 +224,16 @@ streamlit run Home_Optimized_COMPREHENSIVE_v3.py
 
 ---
 
-## 🏆 ANA BULGULAR
+## Ana Bulgular
 
-### En İyi Performans
+### En İyi Performans Gösteren Model
 ```
 Model: Logistic Regression
 Senaryo: S5 (All Combined)
 ─────────────────────────
-F1-Score: 0.843 ⭐
-Recall:   0.824 (hastaların %82.4'ünü yakalanıyor)
-AUC:      0.916 (mükemmel diskriminasyon)
+F1-Score: 0.843
+Recall:   0.824 (hastaların %82.4'ü tespit edilmekte)
+AUC:      0.916 (mükemmel ayrım gücü)
 ```
 
 ### En Etkili Teknik
@@ -240,140 +250,140 @@ LR'de: +2.0%
 ```
 Logistic Regression + S3 (SMOTE)
 ─────────────────────────────────
-F1-Score: 0.837 ✓
-Recall:   0.806 ✓
-Hız:      ~2 sn eğitim ✓
-Bellek:   Düşük ✓
-Yorumlanabilirlik: Yüksek ✓
+F1-Score: 0.837
+Recall:   0.806
+Hız:      ~2 saniye eğitim süresi
+Bellek:   Düşük
+Yorumlanabilirlik: Yüksek
 ```
 
 ---
 
-## 📊 SENARYO ÖZET
+## Senaryo Özet Tablosu
 
 | Senaryo | Teknik | Ortalama F1 | En İyi F1 | En İyi Model | F1 Değişim |
 |---------|--------|------------|-----------|--------------|-----------|
 | S0 | Baseline | 0.788 | 0.817 | LR | - |
 | S1 | + PCA | 0.791 | 0.820 | LR | +0.3% |
 | S2 | + FE | 0.785 | 0.815 | LR | -0.3% |
-| S3 | + SMOTE | 0.826 | 0.837 | LR | +3.8% ⭐ |
+| S3 | + SMOTE | 0.826 | 0.837 | LR | +3.8% (en etkili) |
 | S4 | + Optuna | 0.813 | 0.824 | RF | +2.5% |
-| S5 | All Combined | 0.838 | 0.843 | LR | +5.0% 🏆 |
+| S5 | All Combined | 0.838 | 0.843 | LR | +5.0% (en iyi) |
 
 ---
 
-## 🔑 ANAHTAR ÖZELLİKLER
+## Temel Özellikler
 
 ### Veri Önişleme
-✅ KNN Imputer - Eksik değer doldurma  
-✅ RobustScaler - Aykırı değerlere dayanıklı  
-✅ StandardScaler - PCA için gerekli  
-✅ LabelEncoder - Kategorik değişkenleri kodla  
+- KNN Imputer - Eksik değer doldurma  
+- RobustScaler - Aykırı değerlere dayanıklı  
+- StandardScaler - PCA için gerekli  
+- LabelEncoder - Kategorik değişken kodlama  
 
-### Teknikler
-✅ SMOTE - Sınıf dengeleme (+3.8% F1)  
-✅ PCA - Boyut azaltma (13→12)  
-✅ Optuna - Bayesian hiperparametre optimizasyonu  
-✅ Stratified 10-Fold CV - Güvenilir validasyon  
+### Uygulanan Teknikler
+- SMOTE - Sınıf dengeleme (+3.8% F1)  
+- PCA - Boyut azaltma (13→12)  
+- Optuna - Bayesian hiperparametre optimizasyonu  
+- Stratified 10-Fold CV - Güvenilir doğrulama  
 
-### Modeller
-✅ 6 algoritma (LR, RF, SVM, NB, XGB, KNN)  
-✅ 6 senaryo kombinasyonu  
-✅ 36 model × senaryo kombinasyonu  
-✅ Otomatik performans metrikleri  
+### Kullanılan Modeller
+- 6 algoritma (LR, RF, SVM, NB, XGB, KNN)  
+- 6 senaryo kombinasyonu  
+- 36 model × senaryo kombinasyonu  
+- Otomatik performans metrikleri  
 
 ### Klinik Entegrasyon
-✅ Hasta prediksiyon arayüzü  
-✅ Risk stratifikasyonu (Düşük/Orta/Yüksek)  
-✅ Tıbbi öneriler  
-✅ Threshold optimizasyonu (0.40)  
-✅ Yasal uyarılar  
+- Hasta tahmin arayüzü  
+- Risk sınıflandırması (Düşük/Orta/Yüksek)  
+- Tıbbi öneriler  
+- Eşik değer optimizasyonu (0.40)  
+- Yasal uyarılar  
 
 ### Kullanıcı Arayüzü
-✅ 7 interaktif sayfa  
-✅ Dropdown senaryo seçimi  
-✅ Tab-based dokümantasyon  
-✅ İnteractive hasta formu  
-✅ Otomatik grafik oluşturma  
-✅ Responsive tasarım  
+- 7 interaktif sayfa  
+- Açılır menü ile senaryo seçimi  
+- Sekmeli dokümantasyon  
+- İnteraktif hasta formu  
+- Otomatik grafik oluşturma  
+- Duyarlı tasarım  
 
 ---
 
-## 📈 METRIKLERI ANLAMAK
+## Performans Metriklerinin Yorumlanması
 
-**Accuracy:** Tüm tahminlerin %'si doğru
-- ❌ Sınıf dengesizliğinde kullanmayın
+**Accuracy (Doğruluk):** Tüm tahminlerin doğru olma oranı
+- Not: Sınıf dengesizliği durumlarında yanıltıcı olabilir
 
-**Recall (Duyarlılık):** Gerçek hastaların %'si bulundu
-- ✅ TIP II HATA YAKALAMAK ÖNEMLİ
-- ✅ Tarama programlarında ÖN PRİYORİTE
+**Recall (Duyarlılık):** Gerçek hastaların tespit edilme oranı
+- Tip II hatayı (yanlış negatif) azaltmak için kritik
+- Tarama programlarında öncelikli metrik
 
-**F1-Score:** Precision ve Recall'un dengeli ortalaması
-- ✅ ÖNERILEN METRIK
-- ✅ Sınıf dengesizliğinde güvenilir
+**F1-Score:** Precision ve Recall'un harmonik ortalaması
+- Önerilen birincil metrik
+- Sınıf dengesizliğinde güvenilir
 
-**AUC:** Modelin sınıfları ayırt etme yeteneği (0-1)
+**AUC (Eğri Altı Alan):** Modelin sınıfları ayırt etme yeteneği (0-1)
 - 0.5: Rastgele sınıflandırma
-- 0.9+: Mükemmel diskriminasyon
-- 0.916: BİZ ÖNEMLİ FARK YARATIYORUZ
+- 0.9+: Mükemmel ayrım gücü
+- 0.916: Projede elde edilen değer
 
 ---
 
-## ⚠️ ÖNEMLİ UYARILAR
+## Önemli Uyarılar ve Sınırlamalar
 
 **Tıbbi Uyarı:**
-- ❌ Bu sistem tanı aracı DEĞİLDİR
-- ❌ Doktor muayenesinin yerine geçmez
-- ✅ Daima doktor ile danışın
-- ✅ Acil durumlarda 112'yi arayın
+- Bu sistem tanı aracı değildir
+- Doktor muayenesinin yerine geçemez
+- Her zaman bir sağlık uzmanına danışılmalıdır
+- Acil durumlarda 112 aranmalıdır
 
 **Teknik Sınırlamalar:**
-- ❌ Cleveland veri seti sadece 304 örnek
-- ❌ Diğer popülasyonlarda validate edilmedi
-- ✅ Klinik senaryolar dikkate alınmış
-- ✅ Threshold optimize edilmiş
+- Cleveland veri seti sadece 304 örnek içermektedir
+- Diğer popülasyonlarda doğrulanmamıştır
+- Klinik senaryolar göz önünde bulundurulmuştur
+- Eşik değerleri optimize edilmiştir
 
-**Etik Notlar:**
-- Yapay zekanın yanlış tahminleri kalp tedavilerini etkileyebilir
-- İnsan yargısı her zaman priorite
-- Modeli sadece destekleyici araç olarak kullan
-- Hasta verileri gizliliğini korumak kritik
-
----
-
-## 🔍 DOSYA SEÇİMİ REHBERİ
-
-### Eğer yapacaksan...
-
-**Uygulamayı hızlıca test et:**
-→ `Home_Optimized_COMPREHENSIVE_v3.py` çalıştır (2 dakika)
-
-**Hızlı kurulum ve kullanım talimatları iste:**
-→ `RUN_ME_FIRST.md` oku (3 dakika)
-
-**5 dakikalık özet bilgi iste:**
-→ `EXECUTIVE_SUMMARY.md` oku (5 dakika)
-
-**Tüm metodoloji detaylarını anla:**
-→ `TECHNICAL_REPORT.md` oku (30 dakika)
-
-**Python kodlarını incele:**
-→ `SOURCE_CODE_GUIDE.md` + `COMPLETE_SOURCE_INDEX.md` oku (45 dakika)
-
-**Teknik dokümantasyon ve formüller iste:**
-→ Streamlit uygulamasında "Teknik Dokümantasyon" sekmesi (Streamlit içi)
-
-**Örnek veri analizi yap:**
-→ `model_analysis.py` çalıştır (10 saniye)
-
-**Threshold optimizasyonunu öğren:**
-→ `advanced_optimization.py` + `ADVANCED_OPTIMIZATION_GUIDE.md` (45 dakika)
+**Etik Hususlar:**
+- Yapay zeka modellerinin yanlış tahminleri tedavi kararlarını etkileyebilir
+- İnsan uzman değerlendirmesi her zaman önceliklidir
+- Model sadece karar destek aracı olarak kullanılmalıdır
+- Hasta verilerinin gizliliği kritik öneme sahiptir
 
 ---
 
-## 🚀 DEPLOYMENT SEÇENEKLERİ
+## Dosya Kullanım Rehberi
 
-### Lokal Development
+### Kullanım Senaryolarına Göre Dosya Önerileri
+
+**Uygulamayı hızlıca test etmek için:**
+- `Home_Optimized_COMPREHENSIVE_v3.py` dosyasını çalıştırın (yaklaşık 2 dakika)
+
+**Hızlı kurulum ve kullanım talimatları için:**
+- `RUN_ME_FIRST.md` dosyasını inceleyin (yaklaşık 3 dakika)
+
+**Kısa yönetim özeti için:**
+- `EXECUTIVE_SUMMARY.md` dosyasını okuyun (yaklaşık 5 dakika)
+
+**Detaylı metodoloji bilgisi için:**
+- `TECHNICAL_REPORT.md` dosyasını inceleyin (yaklaşık 30 dakika)
+
+**Kaynak kod analizi için:**
+- `SOURCE_CODE_GUIDE.md` ve `COMPLETE_SOURCE_INDEX.md` dosyalarını okuyun (yaklaşık 45 dakika)
+
+**Teknik dokümantasyon için:**
+- Streamlit uygulamasındaki "Teknik Dokümantasyon" sekmesini kullanın
+
+**Veri analizi örneği için:**
+- `model_analysis.py` betiğini çalıştırın (yaklaşık 10 saniye)
+
+**Eşik değer optimizasyonu için:**
+- `advanced_optimization.py` ve `ADVANCED_OPTIMIZATION_GUIDE.md` dosyalarını inceleyin (yaklaşık 45 dakika)
+
+---
+
+## Dağıtım Seçenekleri
+
+### Yerel Ortamda Geliştirme
 ```bash
 streamlit run Home_Optimized_COMPREHENSIVE_v3.py
 ```
@@ -403,7 +413,7 @@ pyinstaller --onefile Home_Optimized_COMPREHENSIVE_v3.py
 
 ---
 
-## 🎓 ÖĞRENİM KAYNAKLARI
+## Kaynakça ve Referanslar
 
 **Makine Öğrenmesi:**
 - scikit-learn dokumentasyonu: https://scikit-learn.org
@@ -423,16 +433,16 @@ pyinstaller --onefile Home_Optimized_COMPREHENSIVE_v3.py
 
 ---
 
-## ✅ KONTROL LİSTESİ
+## Kurulum Kontrol Listesi
 
-Başlamadan önce:
+### Başlamadan Önce:
 - [ ] Python 3.8+ yüklü
 - [ ] Virtual environment hazır
 - [ ] Tüm requirements.txt kütüphaneleri yüklü
 - [ ] heart_disease_uci.csv dosyası var
 - [ ] Home_Optimized_COMPREHENSIVE_v3.py dosyası var
 
-Çalıştırdıktan sonra:
+### Çalıştırdıktan Sonra:
 - [ ] Streamlit başlamış (localhost:8501)
 - [ ] Ana sayfa yüklendi
 - [ ] Senaryo seçebiliyorum
@@ -443,54 +453,64 @@ Başlamadan önce:
 
 ---
 
-## 📞 YARDIM VE DESTEK
+## Sorun Giderme
 
-**Sorun:**  
+**Yaygın Sorunlar ve Çözümleri:**  
 - ModuleNotFoundError → pip install (requirements)
 - Dataset not found → /mnt/user-data/uploads/ kontrol et
 - Port in use → --server.port 8502 kullan
 - Slow performance → Senaryo azalt, trial sayısı düşür
 
-**Rehber:**
-1. RUN_ME_FIRST.md → Sorun giderme bölümü
-2. Streamlit logs → Hata mesajları
-3. README.md → FAQ bölümü
+**Yardım Kaynakları:**
+1. RUN_ME_FIRST.md - Sorun giderme bölümü
+2. Streamlit günlükleri - Hata mesajları
+3. README.md - Sık sorulan sorular
 
 ---
 
-## 🎉 ÖZETİ
+## Proje Özeti
 
-Başarıyla tamamlanmış olan bu proje size sunar:
+Bu proje kapsamında geliştirilen sistem:
 
-✅ **Tam işlevsel Streamlit uygulaması** (2000+ satır)  
-✅ **6 senaryo × 6 model analizi** (36 kombinasyon)  
-✅ **Klinik entegrasyon** (hasta prediksiyon, öneriler)  
-✅ **Kapsamlı dokümantasyon** (10 PDF + guide)  
-✅ **Üretim hazır kod** (caching, optimizasyon)  
-✅ **Teknik derinlik** (Optuna, SMOTE, PCA, Bootstrap)  
-
----
-
-## 🏁 SONUÇ
-
-Bu sistem **kalp hastalığı tahmini** için:
-- 📊 **En iyi F1-Score:** 0.843 (Logistic Regression + All Combined)
-- 🎯 **Önerilen Model:** Logistic Regression + SMOTE (F1=0.837, hızlı)
-- ⚡ **En etkili teknik:** SMOTE (+3.8% F1)
-- 🚀 **En çok gelişen:** XGBoost (+10.2%)
-
-**Sorumlu kullanım için:**
-- ✅ Her zaman doktor ile danışın
-- ✅ Acil durumlarda 112'yi arayın
-- ✅ Modeli sadece destekleyici araç olarak kullan
+- **Tam işlevsel Streamlit uygulaması** (2000+ satır kod)
+- **6 senaryo × 6 model analizi** (36 farklı kombinasyon)
+- **Klinik entegrasyon** (hasta tahmin modülü ve tıbbi öneriler)
+- **Kapsamlı dokümantasyon** (10 ayrı dokümantasyon dosyası)
+- **Üretim ortamına hazır kod** (önbellekleme ve performans optimizasyonu)
+- **İleri düzey teknikler** (Optuna, SMOTE, PCA, Bootstrap analizi)  
 
 ---
 
-**Başarılar! ❤️**
+## Sonuç
 
-_Son Güncelleme: Ocak 1, 2025_
-_Proje Durumu: ✅ TAMAMLANDI - ÜRETİM HAZIRI_
-_Toplam Geliştirme Zamanı: ~6 saat_
-_Toplam Dosya: 21 dosya, 1.6 MB_
-_Toplam Kod: 3000+ satır_
-_Toplam Dokümantasyon: 100+ sayfa_
+Bu sistem kalp hastalığı risk tahmini için aşağıdaki sonuçları elde etmiştir:
+- **En iyi F1-Score:** 0.843 (Logistic Regression + All Combined)
+- **Önerilen Model:** Logistic Regression + SMOTE (F1=0.837, hızlı eğitim)
+- **En etkili teknik:** SMOTE (+3.8% F1 iyileşmesi)
+- **En fazla gelişme:** XGBoost (+10.2%)
+
+### Sorumlu Kullanım İlkeleri:
+- Her zaman sağlık uzmanına danışılmalıdır
+- Acil durumlarda 112 aranmalıdır
+- Model yalnızca karar destek aracı olarak kullanılmalıdır
+
+---
+
+## Lisans ve İletişim
+
+**Kurum:** Eskişehir Osmangazi Üniversitesi  
+**Program:** Veri Madenciliği Yüksek Lisans  
+**Proje Durumu:** Tamamlandı  
+
+**Proje İstatistikleri:**
+- Toplam Dosya: 21 dosya (1.6 MB)
+- Toplam Kod: 3000+ satır
+- Toplam Dokümantasyon: 100+ sayfa
+- Geliştirme Süresi: ~6 saat
+
+**Son Güncelleme:** 1 Ocak 2025
+
+---
+
+**Geliştiriciler:** Yasin Ünal, Serhat Kahraman  
+**Eskişehir Osmangazi Üniversitesi - 2025**
