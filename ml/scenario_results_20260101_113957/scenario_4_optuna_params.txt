@@ -1,0 +1,33 @@
+============================================================
+OPTUNA - EN İYİ HİPERPARAMETRELER
+============================================================
+
+Logistic Regression:
+  C: 1.4014731381675292
+  penalty: l2
+
+Random Forest:
+  n_estimators: 54
+  max_depth: 3
+  min_samples_split: 20
+  min_samples_leaf: 4
+
+SVM:
+  C: 0.5466278166999438
+  gamma: auto
+  kernel: rbf
+
+Naive Bayes:
+  var_smoothing: 3.83264760427841e-09
+
+XGBoost:
+  n_estimators: 75
+  max_depth: 11
+  learning_rate: 0.0821591166071409
+  subsample: 0.613578227536136
+  colsample_bytree: 0.8516209716261289
+
+KNN:
+  n_neighbors: 9
+  weights: uniform
+  metric: manhattan
